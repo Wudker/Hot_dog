@@ -2,48 +2,41 @@
 #include "Inverse_kinematic.h"
 
 
-
-
 Point A, B, C;
 Point M1 = {0.0, 0.0};
 Point M2 = {-35.5, 0.0};
 
-Point Find_C(Point P)
+Point Find_C(Point CEL)
 {
-    Point C;
+    Point C, h_vec, A_vec;
+    double r1=L1, r2=L1;
+    double d = sqrt(pow(CEL.x-M1.x,2)+pow(CEL.y-M1.y,2));
+    double a = (pow(r1,2)+pow(d,2)-pow(r2,2))/(2*d);
+    double h = sqrt(pow(r1,2)-pow(a,2));
+    A_vec={(CEL.x-M1.x)/d, (CEL.y-M1.y)/d};
+   
+    C.x = M1.x + a * A_vec.x;
+    C.y = M1.y + a * A_vec.y;
 
-    // Promienie dwóch okręgów
-    const double r1 = L1;   // M1 -> C
-    const double r2 = L1;   // P  -> C
+    h_vec.x=-A_vec.x*h;
+    h_vec.y=A_vec.y*h;
 
-    // Wektor M1 -> P
-    double dx = P.x - M1.x;
-    double dy = P.y - M1.y;
+    C.x += h_vec.y;
+    C.y += h_vec.x;
+    serial.print("Jedno rozwiązanie: ");
+    serial.print("C.x: ");
+    serial.println(C.x);
+    serial.print("C.y: ");
+    serial.println(C.y);
 
-    // Odległość M1-P
-    double d = sqrt(dx * dx + dy * dy);
+    C.x -=2 * h_vec.x;
+    C.y -=2 * h_vec.y;
 
-    // Sprawdzenie, czy okręgi się przecinają
-    if (d > r1 + r2 || d < fabs(r1 - r2) || d == 0.0) {
-        return {NAN, NAN};
-    }
-
-    // Odległość od M1 do rzutu C na prostą M1-P
-    double a =
-        (r1 * r1 - r2 * r2 + d * d)
-        / (2.0 * d);
-
-    // Odległość C od prostej M1-P
-    double h =
-        sqrt(r1 * r1 - a * a);
-
-    // Punkt leżący na prostej M1-P
-    double x0 = M1.x + a * dx / d;
-    double y0 = M1.y + a * dy / d;
-
-    // Jedno z dwóch rozwiązań
-    C.x = x0 - h * dy / d;
-    C.y = y0 + h * dx / d;
+    serial.print("drugie rozwiązanie: ");
+    serial.print("C.x: ");
+    serial.println(C.x);
+    serial.print("C.y: ");
+    serial.println(C.y);
 
     return C;
 }

@@ -1,0 +1,72 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "G:\\Github\\Hot_dog\\Software\\Inverse_kinematic_code\\IK\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{7A70887D-B5C5-4817-8F60-108076B5E0DE}|IK.vcxproj|G:\\Github\\Hot_dog\\Software\\Inverse_kinematic_code\\IK\\Inverse_kinematic.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{7A70887D-B5C5-4817-8F60-108076B5E0DE}|IK.vcxproj|solutionrelative:Inverse_kinematic.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7A70887D-B5C5-4817-8F60-108076B5E0DE}|IK.vcxproj|G:\\Github\\Hot_dog\\Software\\Inverse_kinematic_code\\IK\\Inverse_kinematic.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{7A70887D-B5C5-4817-8F60-108076B5E0DE}|IK.vcxproj|solutionrelative:Inverse_kinematic.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7A70887D-B5C5-4817-8F60-108076B5E0DE}|IK.vcxproj|G:\\Github\\Hot_dog\\Software\\Inverse_kinematic_code\\IK\\IK.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{7A70887D-B5C5-4817-8F60-108076B5E0DE}|IK.vcxproj|solutionrelative:IK.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 1,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedHeight": 326,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "IK.cpp",
+              "DocumentMoniker": "G:\\Github\\Hot_dog\\Software\\Inverse_kinematic_code\\IK\\IK.cpp",
+              "RelativeDocumentMoniker": "IK.cpp",
+              "ToolTip": "G:\\Github\\Hot_dog\\Software\\Inverse_kinematic_code\\IK\\IK.cpp",
+              "RelativeToolTip": "IK.cpp",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2026-08-29T07:26:13.783Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Inverse_kinematic.cpp",
+              "DocumentMoniker": "G:\\Github\\Hot_dog\\Software\\Inverse_kinematic_code\\IK\\Inverse_kinematic.cpp",
+              "RelativeDocumentMoniker": "Inverse_kinematic.cpp",
+              "ToolTip": "G:\\Github\\Hot_dog\\Software\\Inverse_kinematic_code\\IK\\Inverse_kinematic.cpp",
+              "RelativeToolTip": "Inverse_kinematic.cpp",
+              "ViewState": "AQIAADgAAAAAAAAAAAAAAAgAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2026-08-29T10:09:19.521Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Inverse_kinematic.h",
+              "DocumentMoniker": "G:\\Github\\Hot_dog\\Software\\Inverse_kinematic_code\\IK\\Inverse_kinematic.h",
+              "RelativeDocumentMoniker": "Inverse_kinematic.h",
+              "ToolTip": "G:\\Github\\Hot_dog\\Software\\Inverse_kinematic_code\\IK\\Inverse_kinematic.h",
+              "RelativeToolTip": "Inverse_kinematic.h",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2026-08-29T07:24:32.768Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
