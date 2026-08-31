@@ -32,12 +32,14 @@ void showtime(){
         Cel = {0.0, (double)i};
         Servo_run();
     }
+    delay(1000);
 
     for (int i = -200; i <= -100; i++)
     {
         Cel = {0.0, (double)i};
         Servo_run();
     }
+    delay(1000);
 }
 
 void startup(){
@@ -48,6 +50,7 @@ delay(1000);
 
 void loop()
 {
+  //startup();
   showtime();
 }
 
